@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@500&family=Outfit:wght@300;500;800&display=swap');
+
+
 *{
   margin: 0;
   padding: 0;
@@ -13,18 +16,63 @@
   height: 60rem;
 }
 
+.logo-cabecalho{
+  margin: 2rem 2rem;
+}
+
+.logo-cabecalho h1{
+  color: #0A2472;
+  font-family: 'Outfit', sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.logo-cabecalho p{
+  color: #0A2472;
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
 span{
   color: blue;
 }
 
 .nav-links{
   display: flex;
-  width: 30%;
+  margin: 4rem 0rem;
+  flex-wrap: nowrap;
+  width: 40%;
 }
 
 .nav-links li{
-  list-style-type: none;
+  text-decoration: none;
   display: inline;
+  color: #0A2472;
+  font-weight: 300;
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  line-height: normal;
+}
+
+.titulo-section-home{
+  color: #0A2472;
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  font-family: 'Outfit', sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
 }
 
 .img-seguros-home{
@@ -44,22 +92,186 @@ span{
 }
 
 .pedal-essencial-home{
+  margin-top: 0.1rem;
   text-align: center;
   background: #8D5E3F;
   width: 17rem;
 }
 
+.pedal-essencial-home h5{
+  color: #FFF;
+  font-family: 'Outfit', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.pedal-essencial-home p{
+  color: #FFF;
+  font-family: 'Outfit', sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
 .pedal-leve-home{
+  margin-top: 0.1rem;
   text-align: center;
   background: #EBEBEA;
   width: 17rem;
 }
 
+.pedal-leve-home h5{
+  color: #000;
+  font-family: 'Outfit', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.pedal-leve-home p{
+  color: #000;
+  font-family: 'Outfit', sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-transform: uppercase;
+  }
+
 .pedal-elite-home{
+  margin-top: 0.1rem;
   text-align: center;
   background: #D1C6C2;
   width: 17rem;
 }
 
+.pedal-elite-home h5{
+  color: #0A2472;
+  font-family: 'Outfit', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.pedal-elite-home p{
+  color: #0A2472;
+  font-family: 'Outfit', sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.sobre-home{
+  margin-top: 7rem;
+  margin-bottom: 5rem;
+}
+
+.sobre-home h1{
+  color: #0A2472;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+  font-family: 'Outfit', sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.sobre-home p{
+  color: #0A2472;
+  width: 87%;
+  margin-left: 2rem;
+  font-family: 'Outfit', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 135.5%; /* 27.1px */
+  text-transform: uppercase;
+}
+
+.footer-container{
+  background-color: #D7D9D9;
+  display: flex;
+  justify-content: space-evenly;
+  height: 20vh;
+}
+
+.cycle-footer{
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.cycle-footer h4{
+  color: #0A2472;
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.7rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 135.5%; /* 40.65px */
+}
+
+.cycle-footer p{
+  color: #0A2472;
+  font-family: 'Outfit', sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 135.5%; /* 27.1px */
+}
+
+.menu-footer{
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.menu-footer h4{
+  color: #0A2472;
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.7rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 135.5%;
+}
+
+.menu-footer p{
+  color: #0A2472;
+  font-family: 'Outfit', sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 135.5%; 
+}
+
+.atendinmento-footer{
+  text-align: center;
+  margin-top: 4.8rem;
+}
+
+.atendinmento-footer h5{
+  color: #0A2472;
+  text-align: center;
+  font-family: 'Outfit', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 135.5%; /* 32.52px */
+}
+
+.bloco-azul{
+  background-color: #0A2472;
+  width: 100%;
+  height: 7vh;
+}
 
 
