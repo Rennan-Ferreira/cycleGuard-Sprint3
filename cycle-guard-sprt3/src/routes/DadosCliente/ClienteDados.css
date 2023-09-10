@@ -27,8 +27,8 @@
 }
 
 .cliente-back-button {
-    background-color: #0a2472;
-    color: #fff;
+    background-color: rgb(166, 225, 250);
+    color: #000000;
     border: none;
     padding: 10px 20px;
     font-size: 16px;
@@ -81,4 +81,27 @@ input[type="text"] {
     border: 1px solid #ccc;
     border-radius: 5px;
     max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    .cliente-form-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .cliente-form-group {
+        margin-bottom: 10px;
+    }
+
+    .cliente-continue-button {
+        margin-top: 15px;
+    }
+    
+    .cliente-title {
+        padding: 0 10px;
+    }
+
+    .cliente-back-button {
+        padding: 10px 15px;
+    }
 }
