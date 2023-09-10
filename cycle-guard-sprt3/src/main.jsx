@@ -7,6 +7,7 @@ import Home from './routes/Home/Home.jsx'
 import Login from './routes/Login/Login.jsx'
 import Error from './routes/Error/Error.jsx'
 
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -20,7 +21,8 @@ const router = createBrowserRouter([
       {
         path: "/Login",
         element: <Login/>
-      }
+      },
+      
     ]
   }
 ])
