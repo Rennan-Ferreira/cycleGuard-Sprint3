@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './DadosBicicleta.css'
+
 export default function DadosBicicleta() {
     return (
         <div className="bike-data-form">
