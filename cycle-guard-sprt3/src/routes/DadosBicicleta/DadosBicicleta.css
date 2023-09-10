@@ -109,3 +109,9 @@ input[type="file"]::-webkit-file-upload-button {
 input[type="file"]::-webkit-file-upload-button:hover {
     background-color: #0a2055;
 }
+
+@media (min-width: 768px) {
+    form {
+        grid-template-columns: 1fr 1fr;
+    }
+}
