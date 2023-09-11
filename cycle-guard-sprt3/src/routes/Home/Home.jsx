@@ -1,3 +1,5 @@
+import Cabecalho from '../../components/Cabecalho.jsx'
+import { Link } from 'react-router-dom'
 import img1 from '../img/img-pedal-essencial.png'
 import img2 from '../img/img-pedal-leve.png'
 import img3 from '../img/img-pedal-elite.png'
@@ -5,29 +7,29 @@ import css from './Home.css'
 export default function Home(){
     return(
         <>
-
+            <Cabecalho/>
             <section>
                 <h3 className="titulo-section-home">SEGUROS PARA SUA BICICLETA</h3>
 
                 <div className="container-seguros-home">
                     <div className="img-seguros-home">
-                        <img src={img1} alt="seguro essencial" />
-                        <img src={img2} alt="seguro leve" />
-                        <img src={img3} alt="seguro elite" />
+                        <Link to="/Login"><img src={img1} alt="seguro essencial" /></Link>
+                        <Link to="/Login"><img src={img2} alt="seguro leve" /></Link>
+                        <Link to="/Login"><img src={img3} alt="seguro elite" /></Link>
                     </div>
                     <div className="titulos-seguros-home">
-                        <div className="pedal-essencial-home">
-                            <h5>PEDAL ESSENCIAL</h5>
-                            <p>SAIBA MAIS</p>
-                        </div>
-                        <div className="pedal-leve-home">
-                            <h5>PEDAL LEVE</h5>
-                            <p>SAIBA MAIS</p>
-                        </div>
-                        <div className="pedal-elite-home">
-                            <h5>PEDAL ELITE</h5>
-                            <p>SAIBA MAIS</p>
-                        </div>
+                        <Link to="/Login"><div className="pedal-essencial-home">
+                                            <h5>PEDAL ESSENCIAL</h5>
+                                            <p>SAIBA MAIS</p>
+                                        </div></Link>
+                        <Link to="/Login"><div className="pedal-leve-home">
+                                            <h5>PEDAL LEVE</h5>
+                                            <p>SAIBA MAIS</p>
+                                          </div></Link>
+                        <Link to="/Login"><div className="pedal-elite-home">
+                                             <h5>PEDAL ELITE</h5>
+                                             <p>SAIBA MAIS</p>
+                                          </div></Link>
                     </div>
                 </div>
 
