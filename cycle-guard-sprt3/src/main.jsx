@@ -6,6 +6,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './routes/Home/Home.jsx'
 import Login from './routes/Login/Login.jsx'
 import Error from './routes/Error/Error.jsx'
+import DadosBicicleta from './routes/DadosBicicleta/DadosBicicleta.jsx'
+import DadosCliente from './routes/DadosCliente/ClienteDados.jsx'
 
 const router = createBrowserRouter([
   {
@@ -20,6 +22,14 @@ const router = createBrowserRouter([
       {
         path: "/Login",
         element: <Login/>
+      },
+      {
+        path: "/DadosBicicleta",
+        element: <DadosBicicleta/>
+      },
+      {
+        path: "/DadosCliente",
+        element: <DadosCliente/>
       }
     ]
   }
