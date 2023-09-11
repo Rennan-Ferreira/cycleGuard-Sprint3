@@ -1,6 +1,7 @@
 import img1 from '../img/img-pedal-essencial.png'
 import img2 from '../img/img-pedal-leve.png'
 import img3 from '../img/img-pedal-elite.png'
+import css from './Home.css'
 export default function Home(){
     return(
         <>
