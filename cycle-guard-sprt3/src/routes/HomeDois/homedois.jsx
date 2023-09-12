@@ -53,9 +53,7 @@ export default function Home(){
             <footer>
                 <div className="footer-container">
                     <div className="cycle-footer">
-                        <h4>Cycle Guard</h4>
-                        <p>Criada em 2023</p>
-                        <p>São Paulo- Brasil</p>
+                        
                     </div>
                     <div className="menu-footer">
                         <h4>Menu</h4>
