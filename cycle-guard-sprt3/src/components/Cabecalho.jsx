@@ -16,7 +16,7 @@ export default function Cabecalho(){
                             <span>  |  </span>
                             <li><Link to="#">SOBRE NÓS</Link></li>
                             <span>  |  </span>
-                            <li><Link to="#">LOGIN</Link></li>
+                            <li><Link to="./routes/Login/Login.jsx">LOGIN</Link></li>
                         </ul>
                     </nav>
                 </div>
