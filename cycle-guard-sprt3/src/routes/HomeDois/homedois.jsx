@@ -38,7 +38,7 @@ export default function Home(){
                 </div>
                 <div className="botao-vistoria-home">
                    <Link to="/DadosCliente"><button>
-                        REALIZAR VISTORIA ONLINE
+                        REALIZAR VISTORIA 
                     </button></Link> 
                 </div>
 
