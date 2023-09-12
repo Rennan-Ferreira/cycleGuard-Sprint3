@@ -9,6 +9,7 @@ import Error from './routes/Error/Error.jsx'
 import Cadastro from './routes/Cadastro/Cadastro.jsx'
 import DadosBicicleta from './routes/DadosBicicleta/DadosBicicleta.jsx'
 import DadosCliente from './routes/DadosCliente/ClienteDados.jsx'
+import EsqueceuSenha from './routes/EsqueceuSenha/EsqueceuSenha.jsx'
 
 const router = createBrowserRouter([
   {
@@ -36,7 +37,10 @@ const router = createBrowserRouter([
       {
         path: "/DadosCliente",
         element: <DadosCliente/>
-
+      },
+      {
+        path: "/EsqueceuSenha",
+        element: <EsqueceuSenha/>
       }
     ]
   }

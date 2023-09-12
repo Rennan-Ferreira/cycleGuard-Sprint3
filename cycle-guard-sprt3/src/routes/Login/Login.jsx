@@ -19,7 +19,7 @@ export default function Login(){
                         SENHA
                         <input class="password" type="text" placeholder="senha"/>
                     </label>
-                    <h5 class="esqueceu-senha">Esqueceu a senha?</h5>
+                    <Link to="/EsqueceuSenha"><h5 class="esqueceu-senha">Esqueceu a senha?</h5></Link>
                 </form>
                 <button class="botao-login">ENTRAR</button>
             </div>
