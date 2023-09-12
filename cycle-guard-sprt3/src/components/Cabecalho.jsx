@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import Login from "../routes/Login/Login";
+
 export default function Cabecalho(){
     return(
         <>
@@ -17,6 +19,7 @@ export default function Cabecalho(){
                             <li><Link to="#">SOBRE NÓS</Link></li>
                             <span>  |  </span>
                             <li><Link to="./routes/Login/Login.jsx">LOGIN</Link></li>
+                            <li><Link to="/login">LOGIN</Link></li>
                         </ul>
                     </nav>
                 </div>
