@@ -2,13 +2,16 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './DadosBicicleta.css'
 import CameraPage from '../CameraPage/CameraPage';
+import DadosCliente from '../DadosCliente/ClienteDados';
 
 
 export default function DadosBicicleta() {
     return (
         <div className="bike-data-form">
             <div className="header">
+                <Link to='/DadosCliente'>
                 <button className="back-button">&#8592; Voltar</button>
+                </Link>
             </div>
             <form>
                 <div className="form-section">
