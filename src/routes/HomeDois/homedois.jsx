@@ -1,19 +1,34 @@
-import Cabecalho from '../../components/Cabecalho.jsx'
 import { Link } from 'react-router-dom'
 import img1 from '../img/img-pedal-essencial.png'
 import img2 from '../img/img-pedal-leve.png'
 import img3 from '../img/img-pedal-elite.png'
-import css from './Homedois.css'
-export default function Home(){
+import './Homedois.css'
+import CabecalhoDois from '../../components/CabecalhoDois'
+import React, { useRef } from 'react';
+
+export default function Homedois(){
+    const sobrePortoRef = useRef(null);
+    const sobreVistoriaRef = useRef(null);
+    const segurosRef = useRef(null);
+
+    const scrollToPorto = () => {
+        sobrePortoRef.current.scrollIntoView({ behavior: 'smooth' });
+    };
+    const scrollToVistoria = () => {
+        sobreVistoriaRef.current.scrollIntoView({ behavior: 'smooth' });
+    };
+    const scrollToSeguros = () => {
+        segurosRef.current.scrollIntoView({ behavior: 'smooth' });
+    };
 
     document.title = 'Cycle Guard Security';
 
     return(
         <>
             
-            <Cabecalho/>
+            <CabecalhoDois scrollToSobrePorto={scrollToPorto} scrollToSobreVistoria={scrollToVistoria} scrollToSeguros={scrollToSeguros}/>
             <section>
-                <h3 className="titulo-section-home">SEGUROS PARA SUA BICICLETA</h3>
+                <h3  ref={segurosRef} className="titulo-section-home">SEGUROS PARA SUA BICICLETA</h3>
 
                 <div className="container-seguros-home">
                     <div className="img-seguros-home">
@@ -21,7 +36,7 @@ export default function Home(){
                         <Link to="/DadosCliente"><img src={img2} alt="seguro leve" /></Link>
                         <Link to="/DadosCliente"><img src={img3} alt="seguro elite" /></Link>
                     </div>
-                    <div className="titulos-seguros-home">
+                    <div ref={sobreVistoriaRef} className="titulos-seguros-home">
                         <Link to="/DadosCliente"><div className="pedal-essencial-home">
                                             <h5>PEDAL ESSENCIAL</h5>
                                             <p>SAIBA MAIS</p>
@@ -36,13 +51,13 @@ export default function Home(){
                                           </div></Link>
                     </div>
                 </div>
-                <div className="botao-vistoria-home">
+                <div  className="botao-vistoria-home">
                    <Link to="/DadosCliente"><button>
                         REALIZAR VISTORIA ONLINE
                     </button></Link> 
                 </div>
 
-                <div className="sobre-home">
+                <div ref={sobrePortoRef} className="sobre-home">
                     <h1>PORTO SEGURO</h1>
                     <p>A Porto Seguro é uma empresa renomada no mercado de seguros, reconhecida pela sua qualidade e confiabilidade. Com mais de 70 anos de atuação, a empresa possui uma vasta gama de produtos que atendem às necessidades de seus clientes, desde seguros para automóveis e residências até seguros empresariais e de vida.
      A empresa se destaca pela sua capacidade de inovação, sempre buscando oferecer soluções diferenciadas e personalizadas para cada cliente. Além disso, a Porto Seguro conta com uma ampla rede de atendimento, que garante um atendimento rápido e eficiente em caso de sinistros.
@@ -68,6 +83,6 @@ export default function Home(){
                 </div>
                 <div className="bloco-azul"></div>
             </footer>
-        </>
-    )
+        </>
+    )
 }

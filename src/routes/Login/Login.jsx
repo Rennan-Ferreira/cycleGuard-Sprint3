@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Homedois from "../HomeDois/homedois";
 
 export default function Login(){
     return(
@@ -21,12 +22,16 @@ export default function Login(){
                     </label>
                     <Link to="/EsqueceuSenha"><h5 class="esqueceu-senha">Esqueceu a senha?</h5></Link>
                 </form>
+                <Link to='/homedois'>
                 <button class="botao-login">ENTRAR</button>
+                </Link>
             </div>
         </div>
         <div class="aba-cadastrar">
             <h1 class="txt-1">AINDA NÃO POSSUI CADASTRO?</h1>
             <p class="paragrafo-1">O cadastro é 100% gratuito e seguro, não pediremos nenhuma informação confidencial.</p>
+           
+           
             <button class="cadastrar-se">
              <Link to="/Cadastro">Cadastrar-se</Link> 
                 </button>
