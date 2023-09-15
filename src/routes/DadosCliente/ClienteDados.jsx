@@ -1,11 +1,18 @@
 import React from 'react';
 import './ClienteDados.css';
+import Homedois from "../HomeDois/homedois";
+import { Link } from 'react-router-dom';
+import DadosBicicleta from '../DadosBicicleta/DadosBicicleta';
+
 
 export default function DadosCliente() {
     return (
         <div className="cliente-data-form">
             <div className="cliente-data-header">
+
+                <Link to='/homedois'>
                 <button className="cliente-back-button">&#8592; Voltar</button>
+                </Link>
             </div>
             <form className="cliente-form-container">
                 <div className="cliente-title">
@@ -31,8 +38,10 @@ export default function DadosCliente() {
                     <label htmlFor="email">Email:</label>
                     <input type="text" id="email" name="email" required />
                 </div>
+                <Link to='/DadosBicicleta'>
                 <button type="submit" className="cliente-continue-button">Continuar</button>
+                </Link>
             </form>
-        </div>
-    );
+        </div>
+    );
 }

@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './DadosBicicleta.css'
+import CameraPage from '../CameraPage/CameraPage';
+
 
 export default function DadosBicicleta() {
     return (
@@ -48,7 +50,9 @@ export default function DadosBicicleta() {
                         <input type="file" id="notaFiscal" name="notaFiscal" />
                     </div>
                 </div>
+                <Link to='/CameraPage'>
                 <button type="submit">Continuar</button>
+                </Link>
             </form>
         </div>
 );

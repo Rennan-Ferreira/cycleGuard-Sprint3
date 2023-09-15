@@ -1,9 +1,8 @@
 import { Link } from "react-router-dom";
-import Login from "../routes/Login/Login";
-import Home from "../routes/Home/Home";
+import Homedois from "../routes/HomeDois/homedois";
 
 
-export default function Cabecalho({ scrollToSobreNos, scrollToSeguros }){
+export default function CabecalhoDois({ scrollToSobrePorto, scrollToSeguros, scrollToSobreVistoria }){
     return(
         <>
             <header className="cabecalho">
@@ -18,9 +17,9 @@ export default function Cabecalho({ scrollToSobreNos, scrollToSeguros }){
                         <ul>
                             <li><Link to="#" onClick={scrollToSeguros}>SEGUROS DISPONÍVEIS</Link></li>
                             <span>  |  </span>
-                            <li><Link to="#" onClick={scrollToSobreNos}>SOBRE NÓS</Link></li>
+                            <li><Link to="#" onClick={scrollToSobrePorto}>PORTO SEGURO</Link></li>
                             <span>  |  </span>
-                            <li><Link to="/login">LOGIN</Link></li>
+                            <li><Link  to="#" onClick={scrollToSobreVistoria}>VISTORIA</Link></li>
                         </ul>
                     </nav>
                 </div>

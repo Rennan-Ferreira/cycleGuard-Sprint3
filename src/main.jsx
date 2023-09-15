@@ -11,6 +11,7 @@ import Cadastro from './routes/Cadastro/Cadastro.jsx'
 import DadosBicicleta from './routes/DadosBicicleta/DadosBicicleta.jsx'
 import DadosCliente from './routes/DadosCliente/ClienteDados.jsx'
 import EsqueceuSenha from './routes/EsqueceuSenha/EsqueceuSenha.jsx'
+import CameraPage from './routes/CameraPage/CameraPage.jsx'
 
 const router = createBrowserRouter([
   {
@@ -45,7 +46,12 @@ const router = createBrowserRouter([
       {
         path: "/EsqueceuSenha",
         element: <EsqueceuSenha/>
+      },
+      {
+        path: "/CameraPage",
+        element: <CameraPage/>
       }
+      
     ]
   }
 ])
