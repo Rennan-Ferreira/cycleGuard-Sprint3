@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Homedois from "../HomeDois/homedois";
+import "./Login.css"
 
 export default function Login(){
     return(
