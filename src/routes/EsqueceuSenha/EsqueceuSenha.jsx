@@ -1,3 +1,5 @@
+import "./EsqueceuSenha.css"
+
 export default function EsqueceuSenha(){
     return(
     <>
